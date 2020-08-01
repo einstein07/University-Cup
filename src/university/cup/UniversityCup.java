@@ -10,7 +10,7 @@ import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 /**
  *
- * @author root07
+ * @author Sindiso
  */
 public class UniversityCup {
 

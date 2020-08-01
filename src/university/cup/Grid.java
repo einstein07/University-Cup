@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package university.cup;
 
 import java.util.ArrayList;
@@ -10,7 +6,7 @@ import java.util.List;
 
 /**
  *
- * @author root07
+ * @author Sindiso
  */
 public class Grid {
     private int r;
@@ -29,8 +25,13 @@ public class Grid {
         }
     }
     
-    public void block(int r, int c){
-        this.grid[r][c] = 1;
+    public int block(int r, int c){
+        int overlap = 0;
+        if(this.grid[r][c] == 1)
+            overlap = 1;
+        else
+            this.grid[r][c] = 1;
+        return overlap;
     }
     
     public List getEmptySpaces(){
